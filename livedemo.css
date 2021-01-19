@@ -117,6 +117,27 @@ h2 {
 
 
 @media (max-width:539px) {
+
+    .glass {
+        background: white;
+        min-height: 80vh;
+        width: 80%;
+        background: -webkit-gradient(linear, 
+        left top, right bottom, 
+        from(rgba(255, 255, 255, 0.4)), 
+        to(rgba(255, 255, 255, 0.3))
+        );
+        background: -o-linear-gradient(left top, 
+        rgba(255, 255, 255, 0.4), 
+        rgba(255, 255, 255, 0.3)
+        );
+        background: linear-gradient(to right bottom, 
+        rgba(255, 255, 255, 0.4), 
+        rgba(255, 255, 255, 0.3)
+        );
+        border-radius: 2rem;
+    }
+    
     a {
         margin-top: 28%;
     }
@@ -154,7 +175,7 @@ h2 {
 @media (max-width:377px) {
 
     .live1, .live2 {
-        margin: 28% auto;
+        margin: 30% auto;
     }
 
     h2 {

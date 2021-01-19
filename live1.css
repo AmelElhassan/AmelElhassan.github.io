@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 
 body {
     margin: 0;
@@ -107,3 +101,152 @@ a {
 }
 
 
+@media (max-width:965px) {
+
+    body { 
+        background-size: 110%;
+    }
+}
+
+@media (max-width:862px) {
+
+    body { 
+        background-size: 120%;
+    }
+
+    #ar {
+        margin-left: 8%;
+    }
+
+    h1 {
+        width: 100%;
+    }
+    
+    .text {
+        width: 60%;
+    }
+}
+
+@media (max-width:750px) {
+
+    body { 
+        background-size: 135%;
+    }
+
+    #ar {
+        margin-left: 9%;
+    }
+
+    h1 {
+        width: 150%;
+        font-size: 2rem;
+        padding-top: 15%;
+    }
+}
+
+@media (max-width:639px) {
+
+    body { 
+        background-size: 160%;
+    }
+
+    #ar {
+        margin-left: 11%;
+    }
+
+    h1 {
+        width: 150%;
+        font-size: 2rem;
+        padding-top: 35%;
+    }
+
+    span {
+        left: 75%;
+    }
+
+    .image {
+        top: 10%;
+        left: 45%;
+    }
+
+    h2 {
+        color: white;
+    }
+    
+    .logo {
+        width: 50%;
+    }
+}
+
+@media (max-width:539px) {
+
+    body { 
+        background-size: 190%;
+    }
+
+    #ar {
+        margin-left: 15%;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    span {
+        left: 70%;
+    }
+
+    .image {
+        top: 10%;
+        left: 40%;
+    }
+
+    .text {
+        width: 80%;
+    }
+    
+}
+
+@media (max-width:461px) {
+
+    body { 
+        background-size: 220%;
+    }
+
+    .image {
+        top: 10%;
+        left: 35%;
+    }  
+}
+
+@media (max-width:377px) {
+
+    body { 
+        background-size: 270%;
+    }
+
+    #ar {
+        margin-left: 17%;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 1.9rem;
+    }
+
+    span {
+        top: 30px;
+        left: 68%;
+    }
+
+    .text {
+        width: 90%;
+    }
+}
+
+@media (max-width:377px) {
+
+    body { 
+        background-size: 280%;
+    }
+}

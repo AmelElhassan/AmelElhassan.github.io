@@ -105,7 +105,7 @@ span {
 .scroll {
     position: absolute;
     width: 6%;
-    top: 85%;
+    top: 75%;
     left: 47%;
     -webkit-animation: scroll 1s infinite;
             animation: scroll 1s infinite;
@@ -294,7 +294,7 @@ h5 {
 
 @media (max-width:1069px) {
     .circle4{
-        margin: -46% 60%;
+        margin: -65% 60%;
     }
 }
 
@@ -338,11 +338,24 @@ h5 {
                 backdrop-filter: blur(1rem);
     }
 
+    .scroll {
+        top: 70%;
+    }
+
     img {
         position: absolute;
         width: 10%;
         top: 80%;
         left: 45%;
+    }
+
+    .circle1{
+        top: 5%;
+        right: 5%;
+    }
+    .circle2{
+        bottom: 5%;
+        left: 5%;
     }
 
     p {
@@ -473,6 +486,11 @@ h5 {
         width: 15%;
         top: 75%;
         left: 43%;
+    }
+
+    .scroll {
+        width: 10%;
+        left: 45%;
     }
 
     .lang {
@@ -634,5 +652,4 @@ h5 {
     .circle4{
         margin: -150% 33%;
     }
-
 }
