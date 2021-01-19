@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="live1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="image">
+        <img class="logo" src="images/logo.svg" alt="#">
+        <h2>Fields Designs</h2>
+    </div>
+    <div class="text">
+        <h1 id="h1">EXPERIENCE PLEASURE OF HIKING WITHOUT GETTING COLD!</h1>
+        <p id="p1">Expensive equipment for hiking is no more necessary. Just get the Fields Equipment Bag and enjoy
+            hiking in the right place!</p>
+
+        <span onclick="changeLanguage('english')">English</span>
+        <span id="ar" onclick="changeLanguage('arabic')">Arabic</span>
+        <div class="back">
+            <a href="livedemo.html">Back</a>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(language) {
+            if (language == "arabic") {
+                document.getElementById("h1").innerHTML = "Arabic";
+                document.getElementById("h1").innerHTML = "استمتع بتجربة المشي لمسافات طويلة دون البرودة";
+                document.getElementById("p1").innerHTML = "لم تعد المعدات باهظة الثمن للمشي لمسافات طويلة ضرورية. فقط احصل على حقيبة معدات الحقول واستمتع بالمشي لمسافات طويلة في المكان المناسب";
+                document.getElementById("h1").style.direction = "rtl";
+                document.getElementById("p1").style.direction = "rtl";
+            }
+            if (language == "english") {
+                document.getElementById("h1").innerHTML = "English";
+                document.getElementById("h1").innerHTML = "EXPERIENCE PLEASURE OF HIKING WITHOUT GETTING COLD!";
+                document.getElementById("p1").innerHTML = "Expensive equipment for hiking is no more necessary. Just get the Fields Equipment Bag and enjoy hiking in the right place!";
+                document.getElementById("h1").style.direction = "ltr";
+                document.getElementById("p1").style.direction = "ltr";
+            }
+        }
+    </script>
+</body>
+
+</html>

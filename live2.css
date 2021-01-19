@@ -1,0 +1,501 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #71B6DD;
+    font-family: 'roboto', sans-serif;
+}
+
+#menu{
+    width: 30px;
+    height: 35px;
+    margin: -35px 0 4px 360px;
+    cursor: pointer;
+    display: block;
+}
+.bar{
+    height: 3px;
+    width: 90%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+#bar1{
+    -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+            transform: translateY(-4px);
+}
+#bar3{
+    -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+            transform: translateY(4px);
+}
+
+.nav-links li{
+    list-style: none;
+    padding: 30px 140px;
+    text-align: center;
+}
+
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links{
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    display: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 12vh;
+    background-color: #71B6DD;
+}
+
+.menu-bg, #menu-bar{
+    position: absolute;
+    right: 15px;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+.change .bar{
+    background-color: white;
+}
+.change #bar1{
+    -webkit-transform: translateY(1px) rotateZ(-45deg);
+        -ms-transform: translateY(1px) rotate(-45deg);
+            transform: translateY(1px) rotateZ(-45deg);
+}
+.change #bar3{
+    -webkit-transform: translateY(-6px) rotate(45deg);
+        -ms-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+    opacity: 0;
+}
+.change{
+    display: block;
+}
+
+.head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 7%;
+}
+
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.logo img {
+    width: 20%;
+}
+
+h1 {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    font-size: 1rem;
+    color: white;
+    padding: 6px;
+}
+
+.account {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.signup {
+    border: 0px solid;
+    background: black;
+    color: white;
+    padding: 7px 15px;
+    margin: 7px;
+    font-size: 1.2rem;
+}
+
+.login {
+    border: 0px solid;
+    background: #FFB017;
+    color: white;
+    padding: 7px 20px;
+    margin: 7px;
+    font-size: 1.2rem;
+}
+
+.titles {
+    margin: 3% 3%;
+}
+
+h2 {
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+span {
+    font-weight: 300;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: -4%;
+}
+
+button {
+    border: 0px solid;
+    background: #FFB017;
+    opacity: 0.8;
+    padding: 8px 22px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.gift img {
+    width: 60%;
+    position: relative;
+    float: right;
+    margin: -20% 3%;
+}
+
+.media a{
+    width: 9%;
+    display: inline-block;
+    padding: 7px;
+    margin-top: 15%;
+}
+
+h4 {
+    position: absolute;
+    bottom: -10%;
+    left: 12.5%;
+    font-size: 1.3rem;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+h4 {
+    bottom: 12%;
+    left: 4%;
+}
+
+@media (max-width:377px) {
+    h4 {
+        bottom: 7%;
+        left: 4.5%;
+    }
+}
+
+@media (min-width: 625px) {
+    
+    #menu{
+        margin: -35px 0 4px 360px;
+    }
+    .bar{
+        height: 2px;
+    }
+    .change #bar1{
+        -webkit-transform: translateY(-2px) rotateZ(-45deg);
+            -ms-transform: translateY(-2px) rotate(-45deg);
+                transform: translateY(-2px) rotateZ(-45deg);
+    }
+
+    .gift img {
+        width: 60%;
+        position: relative;
+        float: right;
+        margin: -10% 3%;
+    }
+
+    .media a{
+        width: 7%;
+        padding: 5px;
+        margin-top: 15%;
+        margin-left: 2%;
+    }
+
+    h4 {
+        bottom: 18%;
+        left: 4%;
+    }
+}
+
+@media (min-width:770px) {
+    #menu{
+        display: none;
+    }
+
+    .nav-links li a{
+        color: black;
+    }
+    
+    .nav-links li{
+        padding: 20px;
+    }
+    
+    .nav-links{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: white;
+        padding: 0px 100px;  
+        position: relative; 
+        left: -7%;
+        border-radius: 50px;
+    }
+
+    #menu-bar ul li {
+        margin-left: -35%;
+    }
+    
+    .head {
+        margin-top: 2%;
+    }
+
+    .logo img {
+        width: 30%;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+        margin-top: 10%;
+        padding: 2px;
+    }
+
+    .account {
+        margin-top: -9%;
+        margin-left: 65%;
+    }
+
+    .titles {
+        margin: 22% 7%;
+    }
+
+    .gift img {
+        width: 50%;
+        margin: -30% 3%;
+    }
+
+    .media a{
+        width: 8%;
+        padding: 10px;
+        margin-top: -5%;
+    }
+
+    h4 {
+        bottom: 7%;
+        left: 8%;
+    }
+}
+
+@media (min-width:980px) {
+    .nav-links li{
+        padding: 20px;
+    }
+    
+    .nav-links{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: white;
+        padding: 0px 160px;  
+        position: relative; 
+        left: -10%;
+        border-radius: 50px;
+    }
+
+    #menu-bar ul li {
+        margin-left: -55%;
+    }
+
+    .account {
+        margin-top: -7%;
+        margin-left: 70%;
+    }
+
+    .titles {
+        margin: 20% 13%;
+    }
+
+    .gift img {
+        width: 50%;
+        margin: -30% 3%;
+    }
+
+    .media a{
+        width: 4%;
+        position: absolute;
+        top: 0;
+        margin: 13.5% 75%;
+    }
+
+    #img2 {
+        padding-left: 80px;
+    }
+    
+    h2 {
+        color: white;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    
+    span {
+        font-weight: 300;
+    }
+    
+    p {
+        color: white;
+        font-size: 1.4rem;
+        margin-top: -2%;
+    }
+
+    button {
+        margin-top: 5%;
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        bottom: -10%;
+        left: 13.5%;
+    }
+}
+
+@media (min-width:1301px) {
+    
+    .nav-links{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: white;
+        padding: 0px 260px;  
+        position: relative; 
+        left: -15%;
+        border-radius: 50px;
+    }
+
+    #menu-bar ul li {
+        margin-left: -100%;
+    }
+
+    .account {
+        margin-top: -5%;
+        margin-left: 70%;
+    }
+
+    .titles {
+        margin: 15% 14%;
+    }
+
+    .gift img {
+        width: 30%;
+        margin: -28% 5%;
+    }
+
+    .media a{
+        width: 3%;
+        position: absolute;
+        top: 0;
+        margin: 11% 75%;
+    }
+
+}
+
+@media (min-width:1477px) {
+    
+    .nav-links{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: white;
+        padding: 0px 360px;  
+        position: relative; 
+        left: -12%;
+        border-radius: 50px;
+    }
+
+    #menu-bar ul li {
+        margin-left: -150%;
+    }
+
+    .titles {
+        margin: 15% 12%;
+    }
+
+    .account {
+        margin-top: -5%;
+        margin-left: 83%;
+    }
+
+    .media a{
+        margin: 9.7% 75%;
+    }
+
+    h2 {
+        color:white;
+        font-size: 3.8rem;
+    }
+    
+    p {
+        color: white;
+        font-size: 1.6rem;
+        margin-top: -2%;
+        width: 75%;
+    }
+
+    .gift img {
+        width: 35%;
+        margin: -35% 2%;
+    }
+
+    button {
+        margin-top: 3%;
+    }
+
+    h4 {
+        bottom: -10%;
+        left: 12.5%;
+    }
+}

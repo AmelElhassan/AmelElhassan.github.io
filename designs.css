@@ -1,0 +1,85 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.images img {
+    min-height: 100vh;
+    width: 80%;
+    padding: 15px;
+    -webkit-box-shadow: 5px 2px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 2px 25px rgba(0, 0, 0, 0.5);
+}
+
+#group-2 {
+    margin-top: 5%;
+}
+#group-3 {
+    margin-top: 5%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    margin-top: 4%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:653px) {
+    .images img {
+        min-height: 80vh;
+        width: 90%;
+    }
+}
+
+@media (max-width:530px) {
+    .images img {
+        min-height: 70vh;
+    }
+}
+
+@media (max-width:426px) {
+    .images img {
+        min-height: 55vh;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:377px) {
+    .images img {
+        min-height: 40vh;
+        padding: 5px;
+    }
+}
+
+

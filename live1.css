@@ -1,0 +1,109 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg); 
+    background-repeat: no-repeat;  
+    background-size: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body::after {
+    content: "";
+    background-image: url(images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.image {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    top: 8%;
+    left: 45%;
+}
+
+.logo {
+    width: 60%;
+    display: inline-block;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin-top: -15%;
+    color: #768CAE;
+    letter-spacing: -1px;
+}
+
+.text {
+    font-family: 'monteserrat', sans-serif;
+    color: white;
+    width: 50%;
+    font-size: 1.4rem;
+    margin: 20% 5%;
+}
+
+span {
+    position: absolute;
+    top: 50px;
+    left: 80%;
+    cursor: pointer;
+    color: rgb(49, 56, 105);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#ar {
+    margin-left: 6%;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+.lang-menu {
+    position: relative;
+    top: 0;
+    float: right;
+    margin: -50% 5%;
+}
+
+.lang-menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'monteserrat', sans-serif;
+    padding: 10px;
+}
+
+.back {
+    position: absolute;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 0px solid;
+    background-color: rgb(18, 109, 151);
+    padding: 5px 20px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
