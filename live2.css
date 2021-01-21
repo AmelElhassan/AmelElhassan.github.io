@@ -8,20 +8,23 @@ body {
 #menu{
     width: 30px;
     height: 35px;
-    margin: -35px 0 4px 360px;
     cursor: pointer;
     display: block;
+    position: relative;
+    right: 10px;
+    top: 20px;
 }
 .bar{
     height: 3px;
-    width: 90%;
     background-color: white;
     display: block;
     border-radius: 5px;
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     transition: 0.3s ease;
+    position: relative;
 }
+
 #bar1{
     -webkit-transform: translateY(-4px);
         -ms-transform: translateY(-4px);
@@ -35,12 +38,12 @@ body {
 
 .nav-links li{
     list-style: none;
-    padding: 30px 140px;
+    padding: 30px;
     text-align: center;
 }
 
 .nav-links li a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -54,22 +57,19 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 12vh;
-    background-color: #71B6DD;
+    background-color: rgb(255, 243, 228);
+    padding-right: 45px;
 }
 
-.menu-bg, #menu-bar{
+.menu-bg, #menu-bar {
     position: absolute;
-    right: 15px;
-}
-
-.nav-links a:hover {
-    color: black;
+    right: 0px;
 }
 
 .change .bar{
     background-color: white;
 }
+
 .change #bar1{
     -webkit-transform: translateY(1px) rotateZ(-45deg);
         -ms-transform: translateY(1px) rotate(-45deg);
@@ -91,6 +91,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-between;
     margin-top: 7%;
 }
 
@@ -105,7 +106,6 @@ body {
 }
 
 h1 {
-    font-family: 'roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 0.2em;
     font-size: 1rem;
@@ -128,9 +128,9 @@ h1 {
     border: 0px solid;
     background: black;
     color: white;
-    padding: 7px 15px;
-    margin: 7px;
+    padding: 5px 15px;
     font-size: 1.2rem;
+    margin: 5px;
 }
 
 .login {
@@ -138,8 +138,8 @@ h1 {
     background: #FFB017;
     color: white;
     padding: 7px 20px;
-    margin: 7px;
     font-size: 1.2rem;
+    margin: 5px;
 }
 
 .titles {
@@ -149,7 +149,6 @@ h1 {
 h2 {
     color: white;
     font-size: 2.3rem;
-    font-weight: 500;
 }
 
 span {
@@ -165,7 +164,6 @@ p {
 button {
     border: 0px solid;
     background: #FFB017;
-    opacity: 0.8;
     padding: 8px 22px;
     font-size: 1.2rem;
     color: white;
@@ -180,76 +178,65 @@ button {
     margin: -20% 3%;
 }
 
-.media a{
-    width: 9%;
-    display: inline-block;
-    padding: 7px;
-    margin-top: 15%;
+.media {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.media img {
+    width: 40px;
+    height: 40px;
 }
 
 h4 {
-    position: absolute;
-    bottom: -10%;
-    left: 12.5%;
     font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 7%;
+}
+
+a {
+    text-decoration: none;
     color: black;
-    border: 1px solid black;
-    padding: 5px 10px;
-}
-
-h4 {
-    bottom: 12%;
-    left: 4%;
-}
-
-@media (max-width:377px) {
-    h4 {
-        bottom: 11%;
-        left: 4.5%;
-    }
 }
 
 @media (min-width: 625px) {
     
-    #menu{
-        margin: -35px 0 4px 360px;
-    }
-    .bar{
-        height: 2px;
-    }
     .change #bar1{
-        -webkit-transform: translateY(-2px) rotateZ(-45deg);
+        -webkit-transform: translateY(-3px) rotateZ(-45deg);
             -ms-transform: translateY(-2px) rotate(-45deg);
-                transform: translateY(-2px) rotateZ(-45deg);
+                transform: translateY(-1px) rotateZ(-45deg);
     }
 
     .gift img {
-        width: 60%;
+        width: 50%;
         position: relative;
         float: right;
-        margin: -10% 3%;
+        margin: -18% 3%;
     }
 
-    .media a{
-        width: 7%;
-        padding: 5px;
-        margin-top: 15%;
-        margin-left: 2%;
+    button {
+        margin-top: 4%;
+    }
+
+    .media {
+        justify-content: start;
+        margin: 5% 3%;
+    }
+
+    #twitter {
+        padding-left: 15px;
     }
 
     h4 {
-        bottom: 18%;
-        left: 4%;
+        margin-left: 5%;
+        margin-top: 8%;
     }
 }
 
 @media (min-width:770px) {
     #menu{
         display: none;
-    }
-
-    .nav-links li a{
-        color: black;
     }
     
     .nav-links li{
@@ -264,16 +251,15 @@ h4 {
             justify-content: space-around;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center;
+                align-items: left;
         background-color: white;
-        padding: 0px 100px;  
-        position: relative; 
-        left: -7%;
+        padding-right: 150px;  
         border-radius: 50px;
     }
 
-    #menu-bar ul li {
-        margin-left: -35%;
+    #menu-bar {
+        margin: 10% 7%;
+        position: absolute;
     }
     
     .head {
@@ -296,84 +282,63 @@ h4 {
     }
 
     .titles {
-        margin: 22% 7%;
+        margin: 18% 7%;
     }
 
     .gift img {
-        width: 50%;
+        width: 40%;
         margin: -30% 3%;
     }
 
-    .media a{
-        width: 8%;
-        padding: 10px;
-        margin-top: -5%;
+    .media {
+        margin: -12% 6%;
+    }
+
+    #twitter {
+        padding-left: 15px;
     }
 
     h4 {
-        bottom: 7%;
-        left: 8%;
+        margin-left: 4%;
+        margin-top: 19%;
     }
 }
 
 @media (min-width:980px) {
-    .nav-links li{
-        padding: 20px;
-    }
-    
-    .nav-links{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        background-color: white;
-        padding: 0px 160px;  
-        position: relative; 
-        left: -10%;
-        border-radius: 50px;
-    }
-
-    #menu-bar ul li {
-        margin-left: -55%;
-    }
 
     .account {
         margin-top: -7%;
-        margin-left: 70%;
+        margin-left: 75%;
     }
 
-    .titles {
-        margin: 20% 13%;
+    .nav-links {
+        padding-right: 200px;  
+    }
+
+    #menu-bar {
+        margin: 10% 15%;
+        position: absolute;
     }
 
     .gift img {
-        width: 50%;
-        margin: -30% 3%;
+        width: 30%;
     }
 
-    .media a{
-        width: 4%;
+    .media{
         position: absolute;
         top: 0;
-        margin: 13.5% 75%;
+        margin: 14.8% 70%;
     }
 
-    #img2 {
-        padding-left: 80px;
+    .media img {
+        width: 35px;
+        height: 35px;
     }
-    
+
     h2 {
         color: white;
         font-size: 3rem;
         font-weight: 500;
-    }
-    
-    span {
-        font-weight: 300;
     }
     
     p {
@@ -382,38 +347,13 @@ h4 {
         margin-top: -2%;
     }
 
-    button {
-        margin-top: 5%;
-        font-size: 1.5rem;
-    }
-
     h4 {
-        bottom: -10%;
-        left: 13.5%;
+        margin-left: 7.5%;
+        margin-top: -10%;
     }
 }
 
 @media (min-width:1301px) {
-    
-    .nav-links{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        background-color: white;
-        padding: 0px 260px;  
-        position: relative; 
-        left: -15%;
-        border-radius: 50px;
-    }
-
-    #menu-bar ul li {
-        margin-left: -100%;
-    }
 
     .account {
         margin-top: -5%;
@@ -454,10 +394,6 @@ h4 {
         position: relative; 
         left: -12%;
         border-radius: 50px;
-    }
-
-    #menu-bar ul li {
-        margin-left: -150%;
     }
 
     .titles {
