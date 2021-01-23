@@ -66,9 +66,13 @@ body {
     right: 0px;
 }
 
+#menu.change {
+    left: 170px;
+
+}
+
 .change .bar{
     background-color: white;
-    left: 190px;
 }
 
 .change #bar1{
