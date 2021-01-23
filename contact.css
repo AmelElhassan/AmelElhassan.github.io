@@ -188,6 +188,7 @@ h5 {
         position: absolute;
         justify-content: center;
         margin-top: -5%;
+        left: 43%;
     }
 
     .links a{
@@ -195,7 +196,6 @@ h5 {
         display: flex;
         justify-content: center;
         position: relative;
-        left: 155%;
         padding-top: 15%;
     }
 
@@ -212,9 +212,8 @@ h5 {
         font-size: 1rem;
     }
 
-    .links a{
-        left: 90%;
-        padding-top: 15%;
+    .links {
+        left: 38%;
     }
 
     h5 {
@@ -277,8 +276,8 @@ h5 {
                 backdrop-filter: blur(1rem);
     }
 
-    .links a{
-        left: 97%;
+    .links {
+        left: 37%;
     }
     
     h5 {
