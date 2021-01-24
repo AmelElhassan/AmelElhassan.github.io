@@ -22,9 +22,8 @@ h2 {
 
 main {
     min-height: 100vh;
-    background: -webkit-gradient(linear, left bottom, right top, from(#8EC1F0), to(#7AFAC4));
-    background: -o-linear-gradient(left bottom, #8EC1F0, #7AFAC4);
-    background: linear-gradient(to right top, #8EC1F0, #7AFAC4);
+    background: -webkit-gradient(linear, left bottom, right top, from(#7AFAC4), to(#8EC1F0));
+    background: linear-gradient(to right top,#7AFAC4,#8EC1F0);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -176,7 +175,7 @@ p {
 .portfolio {
     background: -webkit-gradient(linear, left bottom, right top, from(#8EC1F0), to(#7AFAC4));
     background: -o-linear-gradient(left bottom, #8EC1F0, #7AFAC4);
-    background: linear-gradient(to right top, #8EC1F0, #7AFAC4);
+    background: linear-gradient(to right top,#7AFAC4,#8EC1F0);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -280,21 +279,24 @@ h5 {
     width: 25rem;
     position: relative;
     border-radius: 50%;
-    -webkit-filter: blur(1.5rem);
-            filter: blur(1.5rem);
+    -webkit-filter: blur(3rem);
+            filter: blur(3rem);
 }
 
 .circle3{
-    margin: -38% 2%;
+    margin: -35% 2%;
 }
 .circle4{
-    margin: -46% 65%;
+    margin: -45% 65%;
 }
 
 
 @media (max-width:1069px) {
     .circle4{
-        margin: -65% 60%;
+        margin: -45% 60%;
+    }
+    .circle3{
+        margin: -45% 2%;
     }
 }
 
@@ -420,6 +422,14 @@ h5 {
 
     p{
         font-size: 1.6rem;
+    }
+
+    #port {
+        padding-top: 10%;
+    }
+    
+    .box {
+        margin-top: 35%;
     }
 
     .circle3,
