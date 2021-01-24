@@ -53,6 +53,13 @@ h2 {
     left: 48%;
 }
 
+@media (max-width:1559px) {
+    h2 {
+        margin-top: -10%;
+        left: 48%;
+    }
+}
+
 @media (max-width:833px) {
     h2 {
         margin-top: -16%;

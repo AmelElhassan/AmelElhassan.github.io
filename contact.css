@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 main {
@@ -82,7 +82,7 @@ main {
 h1 {
     text-align: center;
     margin-top: 8%;
-    color: rgb(92, 92, 92);
+    color: black;
     letter-spacing: 0.2rem;
     font-size: 2rem;
 }
@@ -96,30 +96,28 @@ a {
 
 h2 {
     text-align: center;
-    margin: 4% 15%;
+    margin: 5% 15%;
     font-size: 1.2rem;
-    color: white;
-    text-shadow: 2px 2px rgba(133, 133, 133, 0.4);
+    color: rgb(92, 92, 92);
 }
 
 h3 {
     text-align: center;
-    margin: -3% 15%;
-    font-size: 0.9rem;
-    color: rgb(92, 92, 92);
+    margin: -4% 15%;
+    font-size: 0.8rem;
+    color: black;
 }
 
 h4 {
     text-align: center;
     margin: 10% 15%;
     font-size: 2rem;
-    color: rgb(92, 92, 92);
+    color: black;
 }
 
 .links {
     display: flex;
     justify-content: space-evenly;
-
 }
 
 
@@ -138,7 +136,7 @@ h5 {
     position: absolute;
     color: black;
     left: 48%;
-    margin-top: -10%;
+    margin-top: -8%;
     font-size: 1.3rem;
     z-index: 3;
 }
@@ -207,9 +205,17 @@ h5 {
 
 @media (max-width:465px) {
 
+    h1 {
+        font-size: 1.7rem;
+    }
+
     h2 {
         margin: 4% 5%;
         font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1.7rem;
     }
 
     .links {
@@ -281,7 +287,7 @@ h5 {
     }
     
     h5 {
-        left: 41%;
+        left: 44%;
         margin-top: -35%;
     }
 }
