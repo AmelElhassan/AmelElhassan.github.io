@@ -114,10 +114,6 @@ span {
     0% { -webkit-transform: translateY(0); opacity: 0.9 }
     50% { -webkit-transform: translateY(-0.4em); opacity: 0.5 }
 }
-@-webkit-keyframes scroll {
-    0% { -webkit-transform: translateY(0); opacity: 0.9 }
-    50% { -webkit-transform: translateY(0.4em); opacity: 0.5 }
-}
 
 .about {
     position: relative;
@@ -220,7 +216,7 @@ p {
 
 }
 
-.designs, .live-demo, .contact {
+.live-demo, .contact {
     border: 0px solid black;
     padding: 50px 40px;
     font-size: 2.5rem;
@@ -249,10 +245,6 @@ p {
 
 h5 {
     font-weight: 500;
-}
-
-.designs {
-    padding: 50px 60px;
 }
 
 .live-demo {
